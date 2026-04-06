@@ -1,0 +1,156 @@
+República Bolivariana de Venezuela
+Ministerio del Poder Popular para la Educación
+Instituto tecnológico “Antonio José de Sucre”
+UTS – Charallave
+Informática 5to Semestre
+"Sistema de Agendamiento de Citas Médicas "
+
+Docente: Estudiantes:
+David Prado Moises Porras
+ Santiago Sanchez
+Planteamiento del Proyecto
+La gestión de citas en muchos consultorios médicos se realiza de forma manual
+(teléfono, cuaderno, o herramientas básicas como Excel/WhatsApp), lo que genera
+una serie de ineficiencias críticas que afectan tanto al personal como al paciente:
+1. Errores de Agendamiento: Es común la doble reserva (sobre-agenda), el
+registro incorrecto de datos del paciente, o la confusión de horarios y fechas.
+2. Alta Tasa de Ausentismo (No-Show): La falta de un sistema centralizado
+dificulta el seguimiento y la confirmación de citas, provocando que los
+pacientes olviden sus turnos, lo que resulta en pérdida de ingresos y tiempo
+médico desaprovechado.
+3. Ineficiencia del Personal: El personal administrativo dedica una cantidad
+excesiva de tiempo a contestar llamadas y verificar disponibilidad, desviando
+recursos de tareas de atención más importantes.
+4. Falta de Visibilidad: El médico no tiene una vista consolidada y fácil de su
+agenda diaria y de la información básica del paciente antes de la consulta.
+Solución a la Propuesta:
+Esta plataforma reemplazará integralmente los métodos manuales y optimizará
+el flujo completo de la cita. La solución ataca los problemas identificados de la
+siguiente manera:
+ Centralización y Control de la Agenda (Contra Errores): El núcleo del
+sistema será un calendario digital centralizado. Cuando un bloque de tiempo
+es reservado (ya sea por el paciente o el administrador), el sistema lo marca
+como "ocupado" en tiempo real en la base de datos. Esto elimina la
+posibilidad de doble-agenda (sobre-agendamiento), ya que el sistema no
+mostrará ese espacio como disponible. Además, la captura de datos del
+paciente se realizará mediante formularios validados, asegurando la
+integridad de la información (nombres, contacto) y reduciendo errores de
+transcripción manual.
+ Portal de Autogestión para Pacientes (Reducción de Carga
+Administrativa): Se implementará un portal de autogestión para el paciente
+accesible 24/7. Los pacientes podrán registrarse, ver la disponibilidad real del
+médico y agendar su propia cita sin necesidad de una llamada telefónica.
+Esto reduce drásticamente la carga de trabajo del personal administrativo,
+permitiéndoles enfocarse en la atención presencial, la facturación y otras
+tareas de mayor valor, en lugar de gestionar la logística telefónica.
+ Panel de Control y Visibilidad (Gestión Eficiente): El sistema contará con
+un panel de control para el rol de Administrador (secretaria/o). Este panel
+ofrecerá una visualización clara de la agenda (diaria, semanal) con códigos
+de color para el estado de las citas (Pendiente, Confirmada, Cancelada,
+Paciente no se presentó). Esto proporciona una visibilidad completa e
+inmediata del flujo de trabajo diario, permitiendo al personal y al médico
+anticipar la carga de pacientes y gestionar eficientemente cualquier
+reprogramación.
+3. Requerimientos
+ID Módulo / Función Descripción
+RF01
+Gestión de Usuarios y
+Roles
+El sistema debe permitir el registro y autenticación
+de usuarios con roles: Administrador (gestión de
+horarios y reportes) y Paciente (solicitar/consultar
+citas).
+RF02
+Gestión de
+Médicos/Disponibilidad
+El Administrador debe poder definir y modificar los
+bloques de tiempo disponibles (agenda) del
+médico (días y horas de trabajo, descansos).
+RF03 Agendamiento de Citas
+El Paciente debe poder seleccionar una
+fecha/hora disponible y agendar una cita. El
+Administrador debe poder agendar citas en
+nombre del paciente.
+RF04
+Cancelación y
+Modificación
+Los usuarios deben poder cancelar (Pacientes) y
+modificar (Administrador) citas con validación de
+un tiempo límite predefinido.
+RF05 Consulta de Agenda
+El Administrador debe poder visualizar la agenda
+diaria/semanal de forma clara y con filtros de
+estado (Pendiente, Confirmada, Cancelada).
+RF06 Reporte Básico
+El Administrador debe poder generar un reporte de
+la cantidad de citas agendadas y ausentismos (noshows) en un rango de fechas.
+Requerimientos No Funcionales (RNF)
+ID Categoría Descripción
+RNF01 Seguridad
+Todos los datos de pacientes y citas deben estar
+cifrados y el acceso debe ser seguro (protocolo
+HTTPS). Debe haber un control de acceso por
+roles (RF-01).
+RNF02
+Usabilidad
+(UX/UI)
+La interfaz de agendamiento para el paciente
+debe ser intuitiva, requiriendo un mínimo de
+pasos para completar la reserva.
+RNF03 Rendimiento
+El tiempo de respuesta para verificar la
+disponibilidad de la agenda no debe exceder los
+3 segundos.
+RNF04 Disponibilidad
+El sistema debe estar accesible 24/7 (excepto por
+mantenimientos programados), permitiendo a los
+pacientes agendar en cualquier momento.
+RNF05
+Escalabilidad
+(Básico)
+El diseño de la base de datos debe permitir el
+crecimiento futuro a múltiples
+médicos/consultorios.
+4. Cronograma de Elaboración de Módulos (Hasta Febrero)
+Mes Etapas y Módulos Principales Entregables Clave (Hitos)
+Noviembre I. Planificación y Diseño (Base de Datos) Final de Noviembre:
+- Definición detallada de la arquitectura. Diagrama de la Base de Datos
+(entidad-relación).
+- Diseño inicial (mockups) de las
+interfaces.
+Prototipo de baja fidelidad
+(wireframes) de las vistas
+principales.
+- Configuración del entorno de desarrollo.
+Diciembre II. Desarrollo del Back-End (Módulos
+Base) Final de Diciembre:
+- Implementación de RF-01
+(Registro/Autenticación y Roles).
+Funcionalidad de Login/Logout y
+Panel de Administración vacío.
+- Desarrollo de la API para RF-02 (Gestión
+de Médicos/Disponibilidad).
+Estructura de datos completa y
+probada.
+Enero III. Desarrollo del Front-End y
+Agendamiento Final de Enero:
+- Desarrollo de la interfaz de usuario para
+el RF-03 (Agendamiento de Citas).
+Módulo de Agendamiento de Citas
+(para paciente y administrador)
+operativo.
+- Implementación de RF-04 (Cancelación)
+y RF-05 (Consulta de Agenda).
+Agendas de médicos visibles y
+funcionales.
+Febrero IV. Módulo de Reportes, Pruebas y
+Documentación Presentación Final (Febrero):
+- Implementación de RF-06 (Reporte
+Básico).
+Sistema completo y funcional
+(mínimo producto viable).
+- Pruebas de Sistema y Corrección de
+errores (bugs).
+Documentación final (PDF) y
+preparación de la presentación.
+- Tiempo de holgura para ajustes finales.

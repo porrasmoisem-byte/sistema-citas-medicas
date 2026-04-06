@@ -1,0 +1,46 @@
+UNIVERSIDAD ANTONIO
+JOSÉ DE SUCRE
+Facultad de INFORMATICA
+Asignatura: Programación IV
+GUÍA DE ENTREGA DEL PROYECTO
+FINAL
+Requerimientos Técnicos Obligatorios
+Para que el proyecto sea evaluado, debe cumplir con las siguientes especificaciones:
+● Backend: Laravel 10 (PHP 8.1+).
+● Frontend: Vue.js 3
+● Comunicación: Inertia.js (para la navegación y paso de props).
+● Peticiones Asíncronas: Axios para procesos en segundo plano.
+● Estilos: Tailwind CSS o Bootstrap 5.
+● Base de Datos: Relacional (MySQL/PostgreSQL).
+2. Entregables
+El estudiante deberá subir a la plataforma los siguientes archivos en formato comprimido
+(.zip):
+1. Código Fuente: Proyecto completo (Repositorio en Gitlab o GitHub).
+2. Manual de Usuario: Documento PDF detallando el uso del sistema.
+3. Diapositivas de Defensa: Archivo para la presentación oral.
+3. Estructura de la Defensa (Diapositivas)
+La presentación debe ser profesional y seguir estrictamente este orden:
+● Planteamiento del Problema: Descripción de la situación actual y la necesidad
+identificada.
+● Solución Propuesta: Cómo la aplicación resuelve el problema planteado.
+● Arquitectura del Sistema: Explicación del flujo entre Laravel, Inertia y Vue 3 (código
+fuente).
+● Módulos del Sistema: Listado y descripción de los módulos desarrollados (ej. Usuarios,
+Inventario, Reportes).
+● Funcionalidades Clave: Demostración de las características más importantes.
+● Herramientas de Deploy: Descripción del entorno de producción (ej. Forge,
+DigitalOcean, Heroku, XAMPP/VPS).
+4. Manual de Usuario
+El documento PDF debe contener:
+● Portada y Tabla de Contenido.
+● Requerimientos de hardware y software para el usuario final.
+● Guía paso a paso con capturas de pantalla de cada funcionalidad.
+● Glosario de términos y manejo de errores comunes.
+5. Criterios de Evaluación
+Criterio Peso
+Funcionalidad técnica y manejo de datos 10%
+Interfaz de Usuario y UX (Vue 3/CSS) 10%
+Calidad del Manual de Usuario 10%
+Dominio del tema en la Defensa 10%
+Prof. Jorge Prado
+"La programación no se trata de lo que sabes; se trata de lo que puedes descifrar."
